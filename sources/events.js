@@ -10,7 +10,7 @@ var creds = require(process.env.DRIVE_KEY_PATH);
 doc.useServiceAccountAuth(creds, function() {
     doc.getInfo(function(err, info) {
         if (err) return console.log(err);
-        sheet = info.worksheets[2]; // 3rd sheet on the bottom tab thingy
+        sheet = info.worksheets[4]; // 5th sheet on the bottom tab thingy
         setInterval(function() {
             sheet.getRows({}, function(err, rows) {
                 for (var i = 0; i < rows.length; i++) {
@@ -30,6 +30,6 @@ doc.useServiceAccountAuth(creds, function() {
     });
 });
 
-/* In the format [{name: String, date: String, time: String, location: String, notes: String}, {...}, ...] */
+/* In the format [{name: String, day: String, time: String, location: String, notes: String}, {...}, ...] */
 
 module.exports = houseEvents;
