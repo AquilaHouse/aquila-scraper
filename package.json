@@ -2,6 +2,7 @@
   "name": "aquila-scraper",
   "version": "0.0.1",
   "dependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "google-spreadsheet": "^2.0.3"
   }
 }
