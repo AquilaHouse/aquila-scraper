@@ -5,6 +5,8 @@ houseEvents = require("./sources/events.js");
 housePoints = require("./sources/points.js");
 
 var server = restify.createServer();
+server.use(restify.CORS());
+
 server.get('/events', function(req, res, next) {
 	res.send(houseEvents);
 });
