@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "google-spreadsheet": "^2.0.3"
+    "google-spreadsheet": "^2.0.3",
+    "restify": "^4.3.0"
   }
 }
